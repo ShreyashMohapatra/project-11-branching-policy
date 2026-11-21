@@ -1,0 +1,35 @@
+clouduser@AZLTT0222435e27:~$ git clone https://github.com/ShreyashMohapatra/project-11-branching-policy.git
+Cloning into 'project-11-branching-policy'...
+warning: You appear to have cloned an empty repository.
+clouduser@AZLTT0222435e27:~$ cd project-11-branching-policy
+clouduser@AZLTT0222435e27:~/project-11-branching-policy$ echo "# Project 11" > README.md
+git add .
+git commit -m "Initial commit"
+git push origin main
+[main (root-commit) c329af4] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 236 bytes | 236.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ShreyashMohapatra/project-11-branching-policy.git
+ * [new branch]      main -> main
+clouduser@AZLTT0222435e27:~/project-11-branching-policy$ git checkout -b feature/update-readme
+Switched to a new branch 'feature/update-readme'
+clouduser@AZLTT0222435e27:~/project-11-branching-policy$ echo "Branching strategy demo" >> README.md
+clouduser@AZLTT0222435e27:~/project-11-branching-policy$ git add .
+git commit -m "Update README from feature branch"
+git push origin feature/update-readme
+[feature/update-readme 50e20ec] Update README from feature branch
+ 1 file changed, 1 insertion(+)
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 307 bytes | 307.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'feature/update-readme' on GitHub by visiting:
+remote:      https://github.com/ShreyashMohapatra/project-11-branching-policy/pull/new/feature/update-readme
+remote: 
+To https://github.com/ShreyashMohapatra/project-11-branching-policy.git
+ * [new branch]      feature/update-readme -> feature/update-readme
